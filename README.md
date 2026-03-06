@@ -21,7 +21,7 @@
 ---
 
 ### 🏛️ Morgan — OOP Designer
-**Model:** claude-sonnet-4-6
+**Model:** claude-opus-4-6 *(upgraded — complex domain modelling and design pattern decisions)*
 **Trigger:** New domain logic, entities, services or repositories to design
 **Responsibilities:**
 - Class hierarchies and domain models
@@ -33,7 +33,7 @@
 ---
 
 ### ⚙️ Sam — Functional Designer
-**Model:** claude-sonnet-4-6
+**Model:** claude-opus-4-6 *(upgraded — complex functional architecture and data flow design)*
 **Trigger:** Data transformations, pipelines, state management, API responses
 **Responsibilities:**
 - Pure functions and immutability
@@ -45,7 +45,7 @@
 ---
 
 ### 🎨 Riley — UI/UX Designer
-**Model:** claude-opus-4-6 *(upgraded — complex creative decisions)*
+**Model:** claude-sonnet-4-6
 **Trigger:** New views, components, forms or navigation to design
 **Responsibilities:**
 - Component structure and user flows
@@ -114,9 +114,9 @@
 | Role | Name | Model |
 |------|------|-------|
 | Project Lead | Alex | claude-sonnet-4-6 |
-| OOP Designer | Morgan | claude-sonnet-4-6 |
-| Functional Designer | Sam | claude-sonnet-4-6 |
-| UI/UX Designer | Riley | **claude-opus-4-6** |
+| OOP Designer | Morgan | **claude-opus-4-6** |
+| Functional Designer | Sam | **claude-opus-4-6** |
+| UI/UX Designer | Riley | claude-sonnet-4-6 |
 | Senior Developer | Jordan | **claude-opus-4-6** |
 | Junior Developer | Casey | claude-sonnet-4-6 |
 | TDD Lead | Drew | claude-sonnet-4-6 |
@@ -128,9 +128,9 @@
 
 ```
 1. Alex    → Requirements & task breakdown
-2. Morgan  → OOP domain model          } parallel
+2. Morgan  → OOP domain model          } parallel [Opus]
    Sam     → Functional design         }
-3. Riley   → UI/UX spec (if UI exists)   [Opus]
+3. Riley   → UI/UX spec (if UI exists)
 4. Drew    → Write tests BEFORE implementation
 5. Jordan  → Review design, implement core logic  [Opus]
 6. Casey   → Implement well-defined subtasks
@@ -146,9 +146,9 @@
 
 ```
 @alex    — Project Lead
-@morgan  — OOP Designer
-@sam     — Functional Designer
-@riley   — UI/UX Designer        [claude-opus-4-6]
+@morgan  — OOP Designer           [claude-opus-4-6]
+@sam     — Functional Designer    [claude-opus-4-6]
+@riley   — UI/UX Designer
 @jordan  — Senior Developer      [claude-opus-4-6]
 @casey   — Junior Developer
 @drew    — TDD Lead
